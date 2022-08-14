@@ -6,35 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="./script.js" type="module"></script>
   <link rel="stylesheet" href="./style.css">
-  <!-- <style>
-    * { margin: 0 auto;}
-    * {
-      border: solid 1px blue;
-    }
-    wrap {
-      width: 80%;
-      display: flex;
-      flex-direction: column;
-    }
-    header, footer {
-      width: 100%;
-      background-color: aqua;
-      margin-bottom: 1.5rem;
-    }
-    footer {
-      margin-top: 1.5rem;
-    }
-    middle {
-      width: 90%;
-      border: solid 1px grey;
-    }
-    .nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin-bottom: 1rem;
-    }
-  </style> -->
   <title>Document</title>
 </head>
 <body>
@@ -42,43 +13,42 @@
     <header> </header>
     <middle>
       <container>
-      <div class="nav">
-        <div class="nav_prev">
-          <input class="moveMonth" type="button" value="昨年" id="prevYear">
-          <input class="moveMonth" type="button" value="先月" id="prevMonth">
+        <div class="nav">
+          <div class="nav_arrow">
+            <div class="nav_prev">
+              <input class="moveMonth" type="button" value="昨年" id="prevYear">
+              <input class="moveMonth" type="button" value="先月" id="prevMonth">
+            </div>
+            <div id="dispYearMonth">
+              <p id="displayYear"></p>
+              <p>年</p>
+              <p id="displayMonth"></p>
+              <p>月</p>
+              <p id="nameOfYear"></p>
+            </div>
+            <div class="nav_next">
+              <input class="moveMonth" type="button" value="翌月" id="nextMonth">
+              <input class="moveMonth" type="button" value="翌年" id="nextYear">
+            </div>
+          </div>
+          <div class="nav_dispopt">
+            <input type="button" id="returnThisMonth" class="moveMonth" value="今月">
+            <input type="button" id="japanWeek" class="moveMonth" value="六曜">
+            <input type="button" id="lunarCalendar" class="moveMonth" value="旧暦">
+          </div>
         </div>
-        <div id="dispYearMonth">
-          <p id="displayYear"></p>
-          <p>年</p>
-          <p id="displayMonth"></p>
-          <p>月</p>
-          <p id="nameOfYear"></p>
+        <div id="monthDays">
         </div>
-        <div class="nav_next">
-          <input class="moveMonth" type="button" value="翌月" id="nextMonth">
-          <input class="moveMonth" type="button" value="翌年" id="nextYear">
+        <div id="holidays" class="holidays">
+          <h2 class="h_title">今月の休日</h2>
+          <div id="holidayList">
+            <p class="h_date">11日-木曜日-山の日(やまのひ)</p>
+            <p class="h_desc h_text">2014年に制定、山に親しむ機会を得て、山の恩恵に感謝する。</p>
+            <p class="h_start h_text">2016年から施行。</p>
+            <a class="h_link h_text" href="https://ja.wikipedia.org/wiki/%E5%B1%B1%E3%81%AE%E6%97%A5" target="_blank">詳細</a>
+          </div>
         </div>
-      </div>
-      <div class="_2nd_nav">
-        <div id="displayOption">
-          <input type="button" id="returnThisMonth" class="moveMonth" value="今月">
-          <input type="button" id="japanWeek" class="moveMonth" value="六曜">
-          <input type="button" id="lunarCalendar" class="moveMonth" value="旧暦">
-        </div>
-      </div>
-      <div id="monthDays">
-      </div>
-      <div id="holidays" class="holidays">
-        <h2 class="h_title">今月の休日</h2>
-        <div id="holidayList">
-          <p class="h_date">11日-木曜日-山の日(やまのひ)</p>
-          <p class="h_desc h_text">2014年に制定、山に親しむ機会を得て、山の恩恵に感謝する。</p>
-          <p class="h_start h_text">2016年から施行。</p>
-          <a class="h_link h_text" href="https://ja.wikipedia.org/wiki/%E5%B1%B1%E3%81%AE%E6%97%A5" target="_blank">詳細</a>
-        </div>
-      </div>
       </container>
-
     </middle>
     <footer> </footer>
   </wrap>

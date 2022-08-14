@@ -68,7 +68,7 @@ export const HOLIDAY_DESCS = [
     subKey: "",
     date: 429,
     start: 0,
-    desc: "",
+    desc: "「激動の日々を経て、復興を遂げた昭和の時代を顧（かえり）み、国の将来に思いをいたす」",
     link: "https://ja.wikipedia.org/wiki/%E6%98%AD%E5%92%8C%E3%81%AE%E6%97%A5",
   },
   {

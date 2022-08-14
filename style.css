@@ -1,192 +1,224 @@
-* { margin: 0 auto;}
-* {
-  border: solid 0px #fefefe;
-}
-
-wrap {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-}
-
-header, footer {
-  width: 100%;
-  /* background-color: aqua; */
-  margin-bottom: 1.5rem;
-}
-
-footer {
-  margin-top: 1.5rem;
-}
-
-middle {
-  width: 90%;
-  border: solid 0px grey;
-}
-
-.nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-#displayOption {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-#dispYearMonth {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-#displayYear, #displayMonth {
-  font-size: 1.7rem;
-  margin-left: .7rem;
-}
-
-#nameOfYear {
-  font-size: 1.7rem;
-  color:chocolate;
-  margin-left: .7rem;
-}
-
-#returnThisMonth {
-  /* display: none; */
-  height: 1.7rem;
-}
-
-.moveMonth:hover {
-  cursor: hand;
-  cursor: pointer;
-}
-
-.explainHoliday {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+@media (max-width: 600px) {
 
 }
 
-contents {
-  background-color: aqua;
-  border: solid 0px red;
+@media (min-width: 601px) {
+  * {
+      margin: 0 auto;
+      font-size: 16px;
+  }
+  * {
+    border: solid 0px #fefefe;
+  }
 
-}
+  wrap {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
 
-.cal_table {
-  border: solid 1px #333;
-  border-collapse: collapse;
-  font-size: 1rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  table-layout: fixed;
-}
+  header, footer {
+    width: 100%;
+    /* background-color: aqua; */
+    margin-bottom: 1.5rem;
+  }
 
-.cal_tbody {
+  footer {
+    margin-top: 1.5rem;
+  }
 
-}
+  middle {
+    width: 90%;
+    border: solid 0px grey;
+  }
 
-.cal_th {
-  background: #ccc;
-  border: solid 2px #777;
-  padding: .2rem;
-}
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav_arrow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: nowrap;
+  }
 
-.cal_tr {
-}
+  .nav_prev {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 
-th {
-  /* width: 108px; */
-}
-.cal_td {
-  width: 108px;
-  height: 100px;
-  border: solid 2px #777;
-  padding: .1rem .5rem .2rem;
-}
+  .nav_next {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 
-.sunday {
-  color: #ea0000;
-}
-.saturday {
-  color: #0000ea;
-}
+  .nav_dispopt {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin-right: 2px;
+  }
 
-.taian {
-  color: #ea0000;
-}
+  #dispYearMonth {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 
-.day {
-  text-align: end;
-  font-size: 1.2em;
-  /* background-color: aquamarine; */
-  margin-bottom: .5rem;
-}
+  #displayYear, #displayMonth {
+    font-size: 1.7rem;
+    margin-left: .7rem;
+  }
 
-.lunar {
-  display: flex;
-  justify-content: flex-end;
-  font-size: smaller;
-  /* background-color: #fafa7a; */
-}
+  #nameOfYear {
+    font-size: .8rem;
+    color:chocolate;
+    margin-left: .7rem;
+  }
 
-.japanWeek {
-  display: flex;
-  justify-content: start;
-  /* background-color: #e7e7fe; */
-}
-.holidayName {
-  display: flex;
-  justify-content: flex-end;
-  /* background-color: antiquewhite; */
-}
+  #returnThisMonth {
+    /* display: none; */
+    /* height: 1.7rem; */
+  }
 
-.isToday {
-  background-color: #c0ffd9;
-}
+  .moveMonth:hover {
+    cursor: hand;
+    cursor: pointer;
+  }
 
-.isHoliday {
-  color: #ea0000;
-}
+  .explainHoliday {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 
-.otherMonth {
-  color: #8a7a7a;
-}
+  }
 
-.dispMonth {
-}
+  contents {
+    background-color: aqua;
+    border: solid 0px red;
 
-.moveMonth {
-  background-color: #fedeb8;
-  padding: .2em 1.8rem;
-  border: 0px;
-  border-radius: 10px;
-  color: #222;
-  font-size: .9rem;
-  text-align: center;
-}
+  }
 
-.holidays {
-  margin-left: 2rem;
-}
+  .cal_table {
+    border-collapse: collapse;
+    border:#333;
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    table-layout: fixed;
+  }
 
-.h_title {
-  margin-bottom: 1.2rem;
-}
+  .cal_tbody {
 
-.h_date {
-  margin-left: 1.5rem;
-  margin-bottom: .7rem;
-  font-weight: bold;
-  border-bottom: solid 1px #333;
-}
+  }
 
-.h_text {
-  margin-left: 2.5rem;
+  .cal_th {
+    background: rgb(214, 247, 203);
+    border: solid 1px #777;
+    padding: .2rem;
+  }
+
+  .cal_tr {
+  }
+
+  .cal_td {
+    width: 108px;
+    height: 75px;
+    border: solid 1px #777;
+    padding: .1rem .5rem .2rem;
+  }
+
+  .sunday {
+    color: #ea0000;
+  }
+  .saturday {
+    color: #0000ea;
+  }
+
+  .taian {
+    color: #ea0000;
+  }
+
+  .day {
+    text-align: end;
+    /* background-color: aquamarine; */
+    margin-bottom: .7rem;
+  }
+
+  .lunar {
+    display: flex;
+    justify-content: flex-end;
+    font-size: .7rem;
+    /* background-color: #fafa7a; */
+  }
+
+  .japanWeek {
+    display: flex;
+    justify-content: start;
+    font-size: .7rem
+    /* background-color: #e7e7fe; */
+  }
+  .holidayName {
+    display: flex;
+    justify-content: flex-end;
+    font-size: .6rem;
+    /* background-color: antiquewhite; */
+  }
+
+  .isToday {
+    background-color: #c0ffd9;
+  }
+
+  .isHoliday {
+    color: #ea0000;
+  }
+
+  .otherMonth {
+    color: #8a7a7a;
+  }
+
+  .dispMonth {
+  }
+
+  .moveMonth {
+    background-color: #c2f9f0;
+    padding: 4px 10px;
+    margin: 2px;
+    border-radius: 10px;
+    color: #222;
+    font-size: .9rem;
+    text-align: center;
+  }
+
+  .holidays {
+    margin-left: 2rem;
+  }
+
+  .h_title {
+    margin-bottom: 1.2rem;
+  }
+
+  .h_date {
+    margin-left: 1.5rem;
+    margin-bottom: .7rem;
+    font-weight: bold;
+    border-bottom: solid 1px #333;
+  }
+
+  .h_text {
+    margin-left: 2.5rem;
+  }
 }
