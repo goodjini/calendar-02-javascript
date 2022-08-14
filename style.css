@@ -1,7 +1,7 @@
-@media (max-width: 680px) {
+@media (max-width: 480px) {
   * {
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 14px;
   }
   * {
     border: solid 0px #fefefe;
@@ -73,8 +73,8 @@
   }
 
   #displayYear, #displayMonth {
-    font-size: 1.7rem;
-    margin-left: .7rem;
+    font-size: 1.4rem;
+    margin-left: .5rem;
   }
 
   #nameOfYear {
@@ -90,7 +90,7 @@
 
   .moveMonth {
     background-color: #c2f9f0;
-    padding: 4px 10px;
+    padding: 3px 5px;
     margin: 2px;
     border-radius: 10px;
     color: #222;
@@ -133,8 +133,8 @@
   }
 
   .cal_td {
-    width: 108px;
-    height: 75px;
+    width: 78px;
+    height: 60px;
     border: solid 1px #777;
     padding: .1rem .5rem .2rem;
   }
@@ -152,6 +152,7 @@
 
   .day {
     text-align: end;
+    font-size:1.2rem;
     /* background-color: aquamarine; */
     margin-bottom: .7rem;
   }
@@ -221,7 +222,7 @@
   }
 }
 
-@media (min-width: 681px) {
+@media (min-width: 481px) {
   * {
       margin: 0 auto;
       font-size: 16px;
