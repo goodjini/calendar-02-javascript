@@ -1,5 +1,224 @@
 @media (max-width: 680px) {
+  * {
+    margin: 0 auto;
+    font-size: 16px;
+  }
+  * {
+    border: solid 0px #fefefe;
+  }
+  wrap {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+  }
+  header, footer {
+    width: 95%;
+    /* background-color: aqua; */
+    margin-bottom: 1.5rem;
+  }
 
+  footer {
+    margin-top: 1.5rem;
+  }
+
+  middle {
+    border: solid 0px grey;
+  }
+  .nav_arrow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .nav_prev {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .nav_next {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .nav_dispopt {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin-right: 2px;
+  }
+
+  #dispYearMonth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #dispYearMonth_yul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  #displayYear, #displayMonth {
+    font-size: 1.7rem;
+    margin-left: .7rem;
+  }
+
+  #nameOfYear {
+    font-size: 1.0rem;
+    color:chocolate;
+    margin-left: .7rem;
+  }
+
+  #returnThisMonth {
+    /* display: none; */
+    /* height: 1.7rem; */
+  }
+
+  .moveMonth {
+    background-color: #c2f9f0;
+    padding: 4px 10px;
+    margin: 2px;
+    border-radius: 10px;
+    color: #222;
+    font-size: .9rem;
+    text-align: center;
+  }
+
+  .moveMonth:hover {
+    cursor: hand;
+    cursor: pointer;
+  }
+
+  contents {
+    background-color: aqua;
+    border: solid 0px red;
+
+  }
+
+  .cal_table {
+    border-collapse: collapse;
+    border:#333;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    table-layout: fixed;
+  }
+
+  .cal_tbody {
+
+  }
+
+  .cal_th {
+    background: rgb(214, 247, 203);
+    border: solid 1px #777;
+    padding: .2rem;
+  }
+
+  .cal_tr {
+  }
+
+  .cal_td {
+    width: 108px;
+    height: 75px;
+    border: solid 1px #777;
+    padding: .1rem .5rem .2rem;
+  }
+
+  .sunday {
+    color: #ea0000;
+  }
+  .saturday {
+    color: #0000ea;
+  }
+
+  .taian {
+    color: #ea0000;
+  }
+
+  .day {
+    text-align: end;
+    /* background-color: aquamarine; */
+    margin-bottom: .7rem;
+  }
+
+  .lunar {
+    display: flex;
+    justify-content: flex-end;
+    font-size: .7rem;
+    /* background-color: #fafa7a; */
+  }
+
+  .japanWeek {
+    display: flex;
+    justify-content: start;
+    font-size: .7rem
+    /* background-color: #e7e7fe; */
+  }
+  .holidayName {
+    display: flex;
+    justify-content: flex-end;
+    font-size: .6rem;
+    /* background-color: antiquewhite; */
+  }
+
+  .isToday {
+    background-color: #c0ffd9;
+  }
+
+  .isHoliday {
+    color: #ea0000;
+  }
+
+  .otherMonth {
+    color: #8a7a7a;
+  }
+
+  .dispMonth {
+  }
+
+  .moveMonth {
+    background-color: #c2f9f0;
+    padding: 4px 10px;
+    margin: 2px;
+    border-radius: 10px;
+    color: #222;
+    font-size: .9rem;
+    text-align: center;
+  }
+
+  .holidays {
+    margin-left: 2rem;
+  }
+
+  .h_title {
+    margin-bottom: 1.2rem;
+  }
+
+  .h_date {
+    margin-left: 1.5rem;
+    margin-bottom: .7rem;
+    font-weight: bold;
+    border-bottom: solid 1px #333;
+  }
+
+  .h_text {
+    margin-left: 2.5rem;
+  }
 }
 
 @media (min-width: 681px) {
@@ -68,6 +287,13 @@
     flex-wrap: nowrap;
     justify-content: flex-end;
     margin-right: 2px;
+  }
+
+  #dispYearMonth_yul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
   }
 
   #dispYearMonth {
