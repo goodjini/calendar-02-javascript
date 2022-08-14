@@ -1,8 +1,8 @@
-@media (max-width: 600px) {
+@media (max-width: 680px) {
 
 }
 
-@media (min-width: 601px) {
+@media (min-width: 681px) {
   * {
       margin: 0 auto;
       font-size: 16px;
@@ -42,7 +42,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
     flex-wrap: nowrap;
   }
 
@@ -84,7 +83,7 @@
   }
 
   #nameOfYear {
-    font-size: .8rem;
+    font-size: 1.0rem;
     color:chocolate;
     margin-left: .7rem;
   }
@@ -221,4 +220,23 @@
   .h_text {
     margin-left: 2.5rem;
   }
+}
+
+footer {
+  border-top: solid 1px rgb(232, 230, 230);
+  padding: 8px;
+  display:flex;
+  justify-content: center;
+}
+
+.contact a:link {
+  color:#30ae64;;
+  text-decoration:none
+}
+.contact a:visited{
+  color:#30ae64;
+  text-decoration:none;
+}
+.contact a:hover{
+  text-decoration:underline;
 }
