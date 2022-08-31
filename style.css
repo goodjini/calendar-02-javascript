@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (max-width: 747px) {
   * {
     margin: 0 auto;
     font-size: 14px;
@@ -164,6 +164,11 @@
     /* background-color: #fafa7a; */
   }
 
+  #japanWeek, #lunarCalendar{
+    color: #222;
+    background-color: #fedeb8;
+  }
+
   .japanWeek {
     display: flex;
     justify-content: start;
@@ -222,7 +227,7 @@
   }
 }
 
-@media (min-width: 481px) {
+@media (min-width: 748) {
   * {
       margin: 0 auto;
       font-size: 16px;
