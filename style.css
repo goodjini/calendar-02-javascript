@@ -167,7 +167,7 @@
   .japanWeek {
     display: flex;
     justify-content: start;
-    font-size: .7rem
+    font-size: .7rem;
     /* background-color: #e7e7fe; */
   }
   .holidayName {
@@ -391,10 +391,15 @@
     /* background-color: #fafa7a; */
   }
 
+  #japanWeek, #lunarCalendar{
+    color: #222;
+    background-color: #fedeb8;
+  }
+
   .japanWeek {
     display: flex;
     justify-content: start;
-    font-size: .7rem
+    font-size: .7rem;
     /* background-color: #e7e7fe; */
   }
   .holidayName {
