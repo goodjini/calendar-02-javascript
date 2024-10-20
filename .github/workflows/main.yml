@@ -18,4 +18,4 @@ jobs:
           **/.git*
           **/.git*/**
           **/node_modules/**
-        server-dir: /twoine.net/public_html/temp
+        server-dir: /twonine.net/public_html/temp
